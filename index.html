@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projeto SMS Amanda</title>
+
+  <link rel="stylesheet" href="style.css">
+
+  <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@600;700&family=Poppins&display=swap" rel="stylesheet">
+
+</head>
+<body>
+  <nav>
+    <ul>
+      <img class= "phone" src= "imagens/phone.svg" alt="Desenho de um telefone">
+      <li><a href="#">(46)9999-8888</a></li>
+      <img class= "e-mail" src= "imagens/e-mail.svg" alt="Desenho de uma carta">
+      <li><a href="#">atendimento@sms.com.br</a></li>
+    </ul>
+  </nav>
+
+  <div class="page">
+  <header>
+    <img class= "logo" src= "imagens/wechat-logo.svg" alt="Desenho de um chat, dois balões de conversa, um verde e um branco">
+    <h1>Amanda - Créditos SMS</h1>
+      <p>Preencha o formulário e solicite 
+        seus créditos para enviar notificações 
+        aos seus clientes.</p>
+   
+  </header>
+  <form id="my-form">
+
+    <fieldset>
+      <div class="fieldset-wrapper">
+        <legend>Solicite abaixo seu SMS</legend>
+
+        <div class="input-wrapper">
+          <label for="event-title">Razão social <span>(mínimo 8 caracteres)</span></label>
+          <input 
+            type="text" 
+            id="event-title" 
+            required
+            minlength="8" />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="event-link">CNPJ <span>(somente números)</span></label>
+          <input type="url" id="event-link" />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="event-whatsapp">Contato <span>(informe seu telefone)</span></label>
+          <input type="number" id="event-whatsapp" />
+        </div>
+        
+        <div class="input-wrapper">
+          <label for="event-email">E-mail<span>(digite um e-mail válido)</span></label>
+          <input type="email" id="event-email" />
+        </div>
+
+        <div class="input-wrapper">
+          <label for="event-category">Selecione seu plano</label>
+          <select id="event-category">
+            <option value="live">Créditos de 250 SMS por R$ 25,00</option>
+            <option value="podcast">Créditos de 500 SMS por R$ 48,00</option>
+            <option value="mentorship">Créditos de 1000 SMS por R$ 90,00</option>
+          </select>
+        </div>
+      </div>
+    </fieldset>
+    
+  </form>
+
+  <footer>
+    <input 
+    class="button" 
+    type="submit" 
+    form="my-form" 
+    value="Comprar SMS">
+  </footer>
+
+  </div>
+</body>
+</html>
